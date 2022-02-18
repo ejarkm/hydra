@@ -39,11 +39,14 @@ class Falcon9Conf:
 
 ```python
 @dataclass
+class WindowSize:
+    width: int = 1024
+    height: int = 768
+	
+@dataclass
 class Simulation:
   ton_fuel:  int = 10
-  window_size:
-    width: 1024
-    height: 768
+  window_size: WindowSize()
 
 ```
 </div>
